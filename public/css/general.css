@@ -1,0 +1,36 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #b8b5b5;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a; 
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--GrisClaro);
+    font-family: 'roboto';
+    max-width: 1280px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+

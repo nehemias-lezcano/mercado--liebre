@@ -1,0 +1,343 @@
+/* HEADER */
+.Home-header {
+    background-color: var(--Amarillo);
+}
+
+.Home-Header-Logo {
+    width: 50%;
+} 
+
+.Home-Header-icon-lupa {
+    position: absolute;
+    border: none;
+    color: grey;
+    background: #ffffff;
+    top: 10px;
+    right: 1px;
+}
+
+.container {
+    position: relative;
+}
+
+.container input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.Header-form__box{
+    width: 50%;
+}
+
+.header-logo-input__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Home-Header-cuotas  {
+    font-size: 12px;
+    text-align: center;
+}
+
+.Home-Header-menu {
+  text-align: center;
+}
+
+.Home-Header-menu a {
+    background-color: var(--Celeste);
+    font-size: 25px; 
+    color: white;
+    padding: 13px;
+    border-radius: 10%;
+    margin: 30px;
+    display: inline-block;
+}
+
+.header-menu__box {
+    font-size: 12px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.header-menu_div1 ul{
+    display: flex;
+    gap: 10px;
+}
+
+.header-menu_div2 ul{
+    display: flex;
+    gap: 10px;
+}
+
+.header-menu_div2 ul i{
+    padding-left: 2px;
+}
+
+/* MAIN */
+
+.Home-main-h3 {
+    color: gray;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    padding-left: 15px;  
+}
+
+.Home-main-banner-img {
+    width: 100%;
+}
+
+.home-main-section-img {
+    width: 100%;
+}
+
+.home-main-section-div {
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.home-main-section-div:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.Home-main-article {
+    padding: 5px 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: auto;
+}
+
+.Home-main-section-article-div {
+    border-top: solid 1px var(--GrisClaro);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+}
+
+.Home-main-section-article-div h4 {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.Home-main-article:hover h4{
+    height: 20px;
+}
+
+
+.truckIcon {
+    color: var(--Verde);
+    padding: 5px;
+    border-radius: 25px;
+    border: solid 1px var(--Verde);
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    background-color: #FFF;
+    top: -15px;  
+}
+
+.home-main-section-div i:hover {
+    animation: rotate 1s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    40%{
+        transform: rotate(0d);
+    }
+
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+.Home-main-precios{
+    font-size: 18px;
+    width: 30%;
+}
+
+.Home-main-descuento {
+    color: var(--Verde);
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+}
+
+.Home-main-descripcion {
+    display: block;
+    color: gray;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.Main-article__box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+
+.Home-footer {
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.Home-footer-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: block;
+}
+
+.Home-footer-section-div {
+    padding: 20px;
+}
+
+.Home-footer-section-div i{
+    color: #213ee4;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+ 
+.Home-footer-section-div p{
+    font-size: 16px;
+}
+
+.Home-footer-section-div h5{
+    font-size: 18px;
+}
+
+.Home-footer-section-div-p {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+/* TABLET */
+
+@media (max-width:480px) {
+
+    /* HEADER */
+
+    .Homa-header nav {
+        display: none;
+    } 
+
+}
+
+@media (min-width:480px) {
+
+    /* HEADER */
+
+
+  .Home-Header-menu a {
+        display: none;
+    } 
+
+    .header-logo-input-p__box {
+        display: flex;
+        align-items: center;   
+    }
+
+    .Home-Header-cuotas  {
+        padding-right: 20px;
+        padding-top: 20px;
+        font-size: 12px;
+        width: 60%;
+        text-align: center;
+    }
+
+    .header-logo-input__box {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    /* MAIN */
+
+    .Main-article__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Home-main-article {
+        padding: 10px 15px ;
+        width: 50%;   
+    }
+    
+    
+}
+
+@media (min-width:769px) {
+
+    /* HEADER */
+
+    .header-menu__box {
+        padding-bottom: 20px;
+    }
+
+    .Home-Header-cuotas  {
+        font-size: 15px;
+    }
+    
+    .header-menu__box {
+        font-size: 16px;
+    }
+
+    .header-menu_div1 ul{
+        display: flex;
+        gap: 12px;
+    }
+
+    .header-menu_div2 ul{
+        display: flex;
+        gap: 12px;
+    }
+
+        /* MAIN */
+
+    .Main-article__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .Home-main-article {
+        padding: 10px 15px;
+        width: 25%;
+    }
+    
+    .Sección-article__box {
+        padding: 0 20px;
+    }
+
+    /* FOOTER*/
+
+    .Home-footer-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: row; 
+    } 
+
+
+}
+
+
+
+
